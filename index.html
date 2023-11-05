@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 2 | COMP1073 Client-Side JavaScript</title>
+    <script src="./js/script.js"></script>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet" />
+  </head>
+
+  <body>
+    <header>
+      <h1>PASSIVE AGGRESSIVE PIZZA PLACE ORDER FORM</h1>
+      <p id="myStudentId"></p>
+    </header>
+    <main>
+      <h2 id="prompt">What do you want? Hurry up and order we're very busy.</h2>
+      <section id="form">
+        <form>
+          <div>
+            <h3>Select toppings</h3>
+          </div>
+          <div id="inputDiv">
+            <input
+              type="checkbox"
+              id="pepperoni"
+              name="topping"
+              value="pepperoni" />
+            <label for="pepperoni">Pepperoni</label>
+            <input type="checkbox" id="onions" name="topping" value="onions" />
+            <label for="onions">Onions</label>
+            <input
+              type="checkbox"
+              id="peppers"
+              name="topping"
+              value="peppers" />
+            <label for="peppers">Peppers</label>
+            <input type="checkbox" id="bacon" name="topping" value="bacon" />
+            <label for="bacon">Bacon</label>
+            <input type="checkbox" id="olives" name="topping" value="olives" />
+            <label for="olives">Olives</label>
+            <input
+              type="checkbox"
+              id="mushrooms"
+              name="topping"
+              value="mushrooms" />
+            <label for="mushrooms">Mushrooms</label>
+          </div>
+          <div>
+            <h3>How many do you want?</h3>
+            <input
+              id="quantityInput"
+              type="text"
+              name="myTextInput"
+              placeholder="Enter number of pizzas" />
+          </div>
+          <div>
+            <h3>Select a size already, let's go.</h3>
+            <select name="size" id="sizeSelect">
+              <option value="" disabled selected>Select size</option>
+              <option value="small">Small</option>
+              <option value="medium">Medium</option>
+              <option value="large">Large</option>
+            </select>
+          </div>
+          <div>
+            <button id="submit" type="submit">SUBMIT ORDER</button>
+          </div>
+        </form>
+      </section>
+      <section id = "finalOrder">
+      <div id="orderDetails">
+        <p id="orderText"></p>
+      </div>
+    </section>
+    </main>
+  </body>
+</html>
