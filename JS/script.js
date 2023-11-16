@@ -96,7 +96,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Set a timeout for 30 seconds
   setTimeout(addTextAfterDelay, 3000);
   // 60 second timeout 
-  setTimeout(alertAfterDelay, 5000);
+  setTimeout(alertAfterDelay, 10000);
 
   //form data collected on button click
   submitButton.addEventListener("click", collectFormData)
