@@ -3,8 +3,6 @@ I tried to have some fun with this. If the passive aggressiveness isn't your for
 of humour, I do apologize!
 */
 
-//defer not necessary as the script is wrapped in the content loaded event listener
-document.addEventListener("DOMContentLoaded", () => {
   const myStudentId = document.getElementById("myStudentId");
   const submitButton = document.getElementById("submit");
 
@@ -99,5 +97,4 @@ document.addEventListener("DOMContentLoaded", () => {
   setTimeout(alertAfterDelay, 10000);
 
   //form data collected on button click
-  submitButton.addEventListener("click", collectFormData)
-});
+  submitButton.addEventListener("click", collectFormData);
